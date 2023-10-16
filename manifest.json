@@ -1,0 +1,29 @@
+// manifest.json
+{
+    // The name of the extension
+    "name": "Web Cache Viewer",
+  
+    // A short description of the extension
+    "description": "A chrome extension that reloads the current page with a web cache prefix",
+  
+    // The version number of the extension
+    "version": "1.0",
+  
+    // The manifest version of the extension API
+    "manifest_version": 3,
+  
+    // The background service worker script for the extension
+    "background": {
+      "service_worker": "background.js"
+    },
+  
+    // The action for the extension
+    "action": {
+      "default_icon": "icon.png",
+      "default_title": "Reload with web cache"
+    },
+  
+    // The permissions required by the extension
+    "permissions": ["activeTab", "scripting"]
+  }
+  
